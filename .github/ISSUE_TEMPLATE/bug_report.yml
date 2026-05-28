@@ -1,0 +1,74 @@
+name: Bug report
+description: Report a problem with the ZeticMLange Flutter SDK.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue. Include enough detail for us to reproduce it.
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      description: The `zetic_mlange` version from `pubspec.lock`.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: flutter-version
+    attributes:
+      label: Flutter version
+      description: Output from `flutter --version`.
+      placeholder: "Flutter 3.35.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - iOS
+        - Both Android and iOS
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and OS
+      placeholder: "Pixel 9 / Android 16, iPhone 16 / iOS 18"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal sequence of steps or code snippet.
+      placeholder: |
+        1. Install package
+        2. Load model with ...
+        3. Run ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Include relevant Flutter, Android, iOS, or native runtime logs.
+      render: text
+    validations:
+      required: false
