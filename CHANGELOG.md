@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.9.0
+
+Flutter v1.9.0.
+
+- Added LFM-VL image+text runtime APIs for supported local vision-language models.
+- Added function calling APIs for LLM tool-use workflows.
+- Added on-device RAG APIs for retrieval and context-grounded generation.
+- Added KV state persistence APIs for saving, loading, and resetting LLM state.
+- Improved model lifecycle cleanup, native handle ownership, and Flutter image-copy performance.
+
 ## 1.0.0
 
 Flutter v1.0.
