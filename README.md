@@ -9,7 +9,7 @@ running ZeticMLange on-device AI models on Android and iOS.
 
 ```yaml
 dependencies:
-  zetic_mlange: ^1.0.0
+  zetic_mlange: ^1.9.0
 ```
 
 ```dart
